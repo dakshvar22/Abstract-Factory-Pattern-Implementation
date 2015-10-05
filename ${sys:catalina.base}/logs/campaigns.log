@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 02 Oct 2015 02:32:57,606 ERROR  [main] Admin:38 - Connection not activated...
 java.lang.Exception: Connection not activated...
 	at factorySQL.DAO_Factory.getProfessorDAO(DAO_Factory.java:59) ~[classes/:?]
@@ -387,3 +388,8 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operati
 	at factorySQL.AdminUser.addStudent(AdminUser.java:22) ~[classes/:?]
 	at factorySQL.Main.AdminUser(Main.java:92) ~[classes/:?]
 	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+=======
+05 Oct 2015 16:53:05,760  INFO  [main] ProfessorDAO_JDBC:45 - Professormama has been added successfully!
+05 Oct 2015 16:54:07,017  INFO  [main] CourseDAO_JDBC:45 - Course dp has been added
+05 Oct 2015 16:54:31,481  INFO  [main] StudentDAO_JDBC:50 - Student Successfully added
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de

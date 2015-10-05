@@ -5,8 +5,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+<<<<<<< HEAD
 import java.util.Scanner;
 import java.util.Map.Entry;
+=======
+import java.util.Map;
+import java.util.Scanner;
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 
 import Models.Course;
 import Models.Professor;
@@ -16,6 +21,7 @@ public class Main {
 
 	public static Scanner sc;
 	public static DAO_Factory dao;
+<<<<<<< HEAD
 	public static BufferedReader in = new BufferedReader(new InputStreamReader(
 			System.in));
 
@@ -68,6 +74,24 @@ public class Main {
 			
 				break;
 			case 2:
+=======
+	
+	public static void main(String args[]) throws NumberFormatException, IOException {
+		sc = new Scanner(System.in);
+		dao = new DAO_Factory();
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		
+		// Add student
+		System.out
+				.println("Welcome \n Choose an option \n 1.Add Student \n 2.Add Professor \n 3.Add Course");
+		int option;
+		option = Integer.parseInt(in.readLine());
+		Admin admin = new Admin(dao);
+		while (true) {
+			
+			switch (option) {
+			case 1:
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 				System.out.println("Enter ID");
 				int id = Integer.parseInt(in.readLine());
 				System.out.println("Enter name");
@@ -92,7 +116,11 @@ public class Main {
 				admin.addStudent(s);
 				break;
 
+<<<<<<< HEAD
 			case 3:
+=======
+			case 2:
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 				System.out.println("Enter ID");
 				int pid = Integer.parseInt(in.readLine());
 				System.out.println("Enter name");
@@ -102,7 +130,11 @@ public class Main {
 				admin.addProfessor(p);
 				break;
 
+<<<<<<< HEAD
 			case 4:
+=======
+			case 3:
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 				System.out.println("Enter ID");
 				int cid = Integer.parseInt(in.readLine());
 				System.out.println("Enter name");
@@ -113,6 +145,7 @@ public class Main {
 						new Professor(profId, null, new ArrayList<Course>()));
 				admin.addCourse(c);
 				break;
+<<<<<<< HEAD
 			}
 			admin = null;
 			//option = Integer.parseInt(in.readLine());
@@ -154,4 +187,15 @@ public class Main {
 			}
 		}
 	}
+=======
+			
+			case 4:
+				break;
+			}
+			option = Integer.parseInt(in.readLine());
+		}
+
+	}
+
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 }

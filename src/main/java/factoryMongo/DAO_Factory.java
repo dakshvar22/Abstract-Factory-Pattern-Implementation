@@ -1,20 +1,25 @@
-package factorySQL;
+package factoryMongo;
 
 import java.sql.*;
+
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientException;
 
 public class DAO_Factory {
 	
 	public static enum TXN_STATUS { COMMIT, ROLLBACK };
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://localhost/dpAssign";
+	//static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	//static final String DB_URL = "jdbc:mysql://localhost/dpAssign";
 	//public static final String dbName = "dpAssign";
-	public static final String USER = "root";
-<<<<<<< HEAD
-	public static final String PASS = "123";
-=======
-	public static final String PASS = "test";
->>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
-	Connection dbconnection = null;
+	//public static final String USER = "root";
+	//public static final String PASS = "test";
+	//Connection dbconnection = null;
+	MongoClient mongoClient = null;
+	static final String URL = "localhost";
+	static final int PORT = 27017;
+	public static final String dbName="dpAssign";
+	DB db = null;
 	
 	StudentDAO sdao = null;
 	ProfessorDAO pdao = null;
@@ -23,7 +28,7 @@ public class DAO_Factory {
 
 	public DAO_Factory()
 	{
-		dbconnection = null;
+		mongoClient = null;
 		activeConnection = false;
 	}
 
@@ -33,18 +38,18 @@ public class DAO_Factory {
 			throw new Exception("Connection already active");
 
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
-			dbconnection = DriverManager.getConnection(DB_URL,USER,PASS);
+			//Class.forName("com.mysql.jdbc.Driver");
+			//dbconnection = DriverManager.getConnection(DB_URL,USER,PASS);
+			mongoClient = new MongoClient(URL,PORT);
+			db = mongoClient.getDB(dbName);
+			
 			activeConnection = true;
-			dbconnection.setAutoCommit(false);
-		} catch(ClassNotFoundException ex) {
-			System.out.println("Error: unable to load driver class!");
-			System.exit(1);
-		} catch (SQLException ex) {
+			//dbconnection.setAutoCommit(false);
+		}  catch (MongoClientException ex) {
 		    // handle any errors
 		    System.out.println("SQLException: " + ex.getMessage());
-		    System.out.println("SQLState: " + ex.getSQLState());
-		    System.out.println("VendorError: " + ex.getErrorCode());
+		    //System.out.println("SQLState: " + ex.getSQLState());
+		    //System.out.println("VendorError: " + ex.getErrorCode());
 		}
 	}
 	
@@ -54,7 +59,7 @@ public class DAO_Factory {
 			throw new Exception("Connection not activated...");
 
 		if( sdao == null )
-			sdao = new StudentDAO_JDBC(dbconnection);
+			sdao = new StudentDAO_JDBC(db);
 
 		return sdao;
 	}
@@ -64,7 +69,7 @@ public class DAO_Factory {
 			throw new Exception("Connection not activated...");
 
 		if( pdao == null )
-			pdao = new ProfessorDAO_JDBC(dbconnection);
+			pdao = new ProfessorDAO_JDBC(db);
 
 		return pdao;
 	}
@@ -74,7 +79,7 @@ public class DAO_Factory {
 			throw new Exception("Connection not activated...");
 
 		if( cdao == null )
-			cdao = new CourseDAO_JDBC(dbconnection);
+			cdao = new CourseDAO_JDBC(db);
 
 		return cdao;
 	}
@@ -83,35 +88,26 @@ public class DAO_Factory {
 	{
 		// Okay to keep deactivating an already deactivated connection
 		activeConnection = false;
-		if( dbconnection != null ){
+		if( mongoClient != null ){
 			try{
-				if( txn_status == TXN_STATUS.COMMIT)
+				/*if( txn_status == TXN_STATUS.COMMIT)
 				{
 					dbconnection.commit();
 				}
 				else
 				{
 					dbconnection.rollback();
-				}
-				dbconnection.close();
-				dbconnection = null;
-<<<<<<< HEAD
-				sdao = null;
-				pdao = null;
-				cdao = null;
-=======
->>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
+				}*/
+				//dbconnection.close();
+				mongoClient = null;
 
 			}
-			catch (SQLException ex) {
+			catch (MongoClientException ex) {
 			    // handle any errors
 			    System.out.println("SQLException: " + ex.getMessage());
-			    System.out.println("SQLState: " + ex.getSQLState());
-			    System.out.println("VendorError: " + ex.getErrorCode());
+			    //System.out.println("SQLState: " + ex.getSQLState());
+			    //System.out.println("VendorError: " + ex.getErrorCode());
 			}
 		}
 	}
-	
-	
-
 }

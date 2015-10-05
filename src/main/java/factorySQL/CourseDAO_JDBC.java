@@ -2,15 +2,20 @@ package factorySQL;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+<<<<<<< HEAD
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+=======
+import java.sql.SQLException;
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import Models.Course;
+<<<<<<< HEAD
 import Models.Professor;
 
 public class CourseDAO_JDBC implements CourseDAO{
@@ -21,6 +26,16 @@ public class CourseDAO_JDBC implements CourseDAO{
 		this.dbConnection = dbconnection;
 	}
 	
+=======
+
+public class CourseDAO_JDBC implements CourseDAO{
+	private static final Logger LOG = LoggerFactory.getLogger(CourseDAO_JDBC.class);
+	Connection dbconnection;
+
+	public CourseDAO_JDBC(Connection dbconnection) {
+		this.dbconnection = dbconnection;
+	}
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 	public void addCourse(Course course){
 		int course_id = course.getCourse_id();
 		String course_name = course.getCourse_name();
@@ -28,7 +43,11 @@ public class CourseDAO_JDBC implements CourseDAO{
 		String sql = "insert into Course(course_id, professor_id, course_name) values(?,?,?)";
 		PreparedStatement s = null;
 		try{
+<<<<<<< HEAD
 			s = dbConnection.prepareStatement(sql);
+=======
+			s = dbconnection.prepareStatement(sql);
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 			s.setInt(1, course_id);
 			s.setInt(2, prof_id);
 			s.setString(3, course_name);
@@ -47,6 +66,7 @@ public class CourseDAO_JDBC implements CourseDAO{
 			LOG.error(e.getMessage(),e);
 		}
 	}
+<<<<<<< HEAD
 	
 	public Course getCourseById(int course_id){
 		Statement s = null;
@@ -105,3 +125,6 @@ public class CourseDAO_JDBC implements CourseDAO{
 	}
 }
 
+=======
+}
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
