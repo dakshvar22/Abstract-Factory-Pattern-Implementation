@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<!--logFileName is the name for your log file -->
+	<Properties>
+		<Property name="logFileName">campaigns</Property>
+	</Properties>
+
+	<Appenders>
+		<!-- Async Loggers will auto-flush in batches, so switch off immediateFlush. -->
+		<RollingRandomAccessFile name="FILE"
+			immediateFlush="false" fileName="${sys:catalina.base}/logs/${logFileName}.log"
+			filePattern="${sys:catalina.base}/logs/${logFileName}-%d{MM-dd-yyyy}-%i.log.gz">
+			<RegexFilter regex=".*Request method '.*' not supported$"
+				onMatch="DENY" onMismatch="ACCEPT" />
+			<PatternLayout
+				pattern="%d{dd MMM yyyy HH:mm:ss,SSS} %5p %marker [%t] %c{1}:%L - %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingRandomAccessFile>
+		<Console name="CONSOLE" target="SYSTEM_OUT">
+			<RegexFilter regex=".*Request method '.*' not supported$"
+				onMatch="DENY" onMismatch="ACCEPT" />
+			<PatternLayout
+				pattern="%d{dd MMM yyyy HH:mm:ss,SSS} %5p %marker %c{1}:%L - %m%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<!-- pattern layout actually uses location, so we need to include it -->
+		<AsyncRoot level="INFO" includeLocation="true">
+			<AppenderRef ref="FILE" />
+			<AppenderRef ref="CONSOLE" level="INFO" />
+		</AsyncRoot>
+		<!--This is for cassandra log -->
+		<AsyncLogger name="com.datastax.driver" level="INFO"
+			includeLocation="true" additivity="false">
+			<AppenderRef ref="FILE" />
+			<AppenderRef ref="CONSOLE" />
+		</AsyncLogger>
+		<!--You can remove org.thymeleaf if you are not using thymeleaf -->
+		<AsyncLogger name="org.thymeleaf" level="ERROR"
+			includeLocation="true" additivity="false">
+			<AppenderRef ref="FILE" />
+			<AppenderRef ref="CONSOLE" />
+		</AsyncLogger>
+		<!--For shiro session validator-->
+		<AsyncLogger name="org.apache.shiro.session.mgt.AbstractValidatingSessionManager" level="WARN"
+			includeLocation="true" additivity="false">
+			<AppenderRef ref="FILE" />
+			<AppenderRef ref="CONSOLE" />
+		</AsyncLogger>
+	</Loggers>
+</Configuration>
