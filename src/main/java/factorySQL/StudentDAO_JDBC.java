@@ -1,6 +1,9 @@
 package factorySQL;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +12,8 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 
+import Models.Course;
+import Models.Professor;
 import Models.Student;
 
 public class StudentDAO_JDBC implements StudentDAO {
@@ -61,5 +66,30 @@ public class StudentDAO_JDBC implements StudentDAO {
 				LOG.error(e.getMessage(),e);
 			}
 		}
+	}
+	public HashMap<Integer,Double> getEnrolledCourses(int student_id){
+		HashMap<Integer,Double> courses_marks = new HashMap<Integer,Double>();
+		Statement s = null;
+		String sql = "select * from Student_Course where student_id = "+student_id;
+		try{
+			s = dbConnection.createStatement();
+			ResultSet res = s.executeQuery(sql);
+			while(res.next()){
+				int course_id = res.getInt("course_id");
+				double marks = res.getDouble("marks");
+				courses_marks.put(course_id, marks);
+			}
+		}
+		catch(SQLException e){
+			LOG.error(e.getMessage(),e);
+		}
+		try{
+			if (s != null)
+				s.close();
+		}
+		catch(SQLException e){
+			LOG.error(e.getMessage(),e);
+		}
+		return courses_marks;
 	}
 }

@@ -8,17 +8,14 @@ import Models.Course;
 import Models.Professor;
 import Models.Student;
 
-public class Admin {
+public class AdminUser extends User{
 
-	private static final Logger LOG = LoggerFactory.getLogger(Admin.class);
-	public static DAO_Factory dao;
-	public Admin(DAO_Factory dao)
+	public AdminUser(DAO_Factory dao)
 	{
 		this.dao = dao;
 	}
 	public void addStudent(Student s)
-	{
-		
+	{	
 		try{
 			this.dao.activateConnection();
 			StudentDAO sdao = dao.getStudentDAO();

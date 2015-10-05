@@ -9,7 +9,7 @@ public class DAO_Factory {
 	static final String DB_URL = "jdbc:mysql://localhost/dpAssign";
 	//public static final String dbName = "dpAssign";
 	public static final String USER = "root";
-	public static final String PASS = "test";
+	public static final String PASS = "123";
 	Connection dbconnection = null;
 	
 	StudentDAO sdao = null;
@@ -91,6 +91,9 @@ public class DAO_Factory {
 				}
 				dbconnection.close();
 				dbconnection = null;
+				sdao = null;
+				pdao = null;
+				cdao = null;
 
 			}
 			catch (SQLException ex) {

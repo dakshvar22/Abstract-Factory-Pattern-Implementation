@@ -4,5 +4,6 @@ import Models.Professor;
 
 public interface ProfessorDAO {
 
-	void addProfessor(Professor prof);
+	public void addProfessor(Professor prof);
+	public Professor getProfessorById(int prof_id);
 }
