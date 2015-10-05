@@ -1,3 +1,86 @@
 05 Oct 2015 16:53:05,760  INFO  [main] ProfessorDAO_JDBC:45 - Professormama has been added successfully!
 05 Oct 2015 16:54:07,017  INFO  [main] CourseDAO_JDBC:45 - Course dp has been added
 05 Oct 2015 16:54:31,481  INFO  [main] StudentDAO_JDBC:50 - Student Successfully added
+05 Oct 2015 19:35:03,423  INFO  [main] ProfessorDAO_JDBC:33 - Professormamashri has been added successfully!
+05 Oct 2015 19:35:27,823  INFO  [main] CourseDAO_JDBC:31 - Course dbj has been added
+05 Oct 2015 19:35:49,084  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
+05 Oct 2015 19:36:06,391 ERROR  [main] StudentDAO_JDBC:40 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4140) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4109) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:32) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+05 Oct 2015 19:36:06,391 ERROR  [main] StudentDAO_JDBC:61 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4140) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4109) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:53) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+05 Oct 2015 19:47:20,516  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
+05 Oct 2015 19:47:32,356 ERROR  [main] StudentDAO_JDBC:40 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4140) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4109) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:32) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:57) ~[classes/:?]
+05 Oct 2015 19:47:32,356 ERROR  [main] StudentDAO_JDBC:61 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4140) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4109) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:53) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:57) ~[classes/:?]
+05 Oct 2015 19:50:27,933  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
+05 Oct 2015 19:50:42,994  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
+05 Oct 2015 19:51:30,995  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added

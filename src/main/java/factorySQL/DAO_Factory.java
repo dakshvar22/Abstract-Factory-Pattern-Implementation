@@ -91,6 +91,9 @@ public class DAO_Factory {
 				}
 				dbconnection.close();
 				dbconnection = null;
+				sdao = null;
+				pdao = null;
+				cdao = null;
 
 			}
 			catch (SQLException ex) {

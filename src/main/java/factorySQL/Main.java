@@ -27,11 +27,12 @@ public class Main {
 				.println("Welcome \n Choose an option \n 1.Add Student \n 2.Add Professor \n 3.Add Course");
 		int option;
 		option = Integer.parseInt(in.readLine());
-		Admin admin = new Admin(dao);
+		Admin admin = null;
 		while (true) {
 			
 			switch (option) {
 			case 1:
+				admin = new Admin(dao);
 				System.out.println("Enter ID");
 				int id = Integer.parseInt(in.readLine());
 				System.out.println("Enter name");
@@ -54,9 +55,11 @@ public class Main {
 				}
 				Student s = new Student(id, name, courses, m);
 				admin.addStudent(s);
+				admin = null;
 				break;
 
 			case 2:
+				admin = new Admin(dao);
 				System.out.println("Enter ID");
 				int pid = Integer.parseInt(in.readLine());
 				System.out.println("Enter name");
@@ -64,9 +67,11 @@ public class Main {
 
 				Professor p = new Professor(pid, pname, new ArrayList<Course>());
 				admin.addProfessor(p);
+				admin=null;
 				break;
 
 			case 3:
+				admin = new Admin(dao);
 				System.out.println("Enter ID");
 				int cid = Integer.parseInt(in.readLine());
 				System.out.println("Enter name");
@@ -76,6 +81,7 @@ public class Main {
 				Course c = new Course(cid, cname, new ArrayList<Student>(),
 						new Professor(profId, null, new ArrayList<Course>()));
 				admin.addCourse(c);
+				admin = null;
 				break;
 			
 			case 4:
