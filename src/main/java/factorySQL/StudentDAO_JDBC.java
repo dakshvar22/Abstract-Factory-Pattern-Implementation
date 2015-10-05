@@ -1,6 +1,13 @@
 package factorySQL;
 
+<<<<<<< HEAD
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+=======
+import java.sql.SQLException;
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +16,11 @@ import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 
+<<<<<<< HEAD
+import Models.Course;
+import Models.Professor;
+=======
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 import Models.Student;
 
 public class StudentDAO_JDBC implements StudentDAO {
@@ -62,4 +74,32 @@ public class StudentDAO_JDBC implements StudentDAO {
 			}
 		}
 	}
+<<<<<<< HEAD
+	public HashMap<Integer,Double> getEnrolledCourses(int student_id){
+		HashMap<Integer,Double> courses_marks = new HashMap<Integer,Double>();
+		Statement s = null;
+		String sql = "select * from Student_Course where student_id = "+student_id;
+		try{
+			s = dbConnection.createStatement();
+			ResultSet res = s.executeQuery(sql);
+			while(res.next()){
+				int course_id = res.getInt("course_id");
+				double marks = res.getDouble("marks");
+				courses_marks.put(course_id, marks);
+			}
+		}
+		catch(SQLException e){
+			LOG.error(e.getMessage(),e);
+		}
+		try{
+			if (s != null)
+				s.close();
+		}
+		catch(SQLException e){
+			LOG.error(e.getMessage(),e);
+		}
+		return courses_marks;
+	}
+=======
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 }

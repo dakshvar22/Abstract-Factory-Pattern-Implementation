@@ -61,8 +61,11 @@
 	        <artifactId>mysql-connector-java</artifactId>
 	        <version>5.1.36</version>
 	    </dependency>
+<<<<<<< HEAD
+=======
 	    
 	    
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
 	</dependencies>
 	<build>
     <plugins>

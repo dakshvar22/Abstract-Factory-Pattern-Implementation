@@ -1,6 +1,398 @@
+<<<<<<< HEAD
+02 Oct 2015 02:32:57,606 ERROR  [main] Admin:38 - Connection not activated...
+java.lang.Exception: Connection not activated...
+	at factorySQL.DAO_Factory.getProfessorDAO(DAO_Factory.java:59) ~[classes/:?]
+	at factorySQL.Admin.addProfessor(Admin.java:33) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:60) ~[classes/:?]
+02 Oct 2015 02:34:42,362 ERROR  [main] Admin:38 - Connection not activated...
+java.lang.Exception: Connection not activated...
+	at factorySQL.DAO_Factory.getProfessorDAO(DAO_Factory.java:59) ~[classes/:?]
+	at factorySQL.Admin.addProfessor(Admin.java:33) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:62) ~[classes/:?]
+02 Oct 2015 02:41:06,739 ERROR  [main] Admin:38 - Connection not activated...
+java.lang.Exception: Connection not activated...
+	at factorySQL.DAO_Factory.getProfessorDAO(DAO_Factory.java:59) ~[classes/:?]
+	at factorySQL.Admin.addProfessor(Admin.java:33) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:66) ~[classes/:?]
+02 Oct 2015 02:45:05,144  INFO  [main] ProfessorDAO_JDBC:33 - ProfessorLALA has been added successfully!
+02 Oct 2015 02:46:34,315  INFO  [main] ProfessorDAO_JDBC:33 - ProfessorDada has been added successfully!
+02 Oct 2015 03:08:46,393  INFO  [main] ProfessorDAO_JDBC:33 - Professormama has been added successfully!
+02 Oct 2015 03:09:08,615  INFO  [main] CourseDAO_JDBC:31 - Course dp has been added
+02 Oct 2015 03:09:42,424  INFO  [main] StudentDAO_JDBC:35 - Student Successfully added
+02 Oct 2015 03:09:42,515 ERROR  [main] Admin:31 - For input string: "1=50.0"
+java.lang.NumberFormatException: For input string: "1=50.0"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:492) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:527) ~[?:1.7.0_79]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:44) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+02 Oct 2015 03:11:58,244  INFO  [main] StudentDAO_JDBC:35 - Student Successfully added
+02 Oct 2015 03:11:58,340 ERROR  [main] Admin:31 - For input string: "1=50.0"
+java.lang.NumberFormatException: For input string: "1=50.0"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:492) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:527) ~[?:1.7.0_79]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:44) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+02 Oct 2015 03:14:19,119  INFO  [main] StudentDAO_JDBC:35 - Student Successfully added
+02 Oct 2015 03:14:19,276 ERROR  [main] Admin:31 - For input string: "1=100.0"
+java.lang.NumberFormatException: For input string: "1=100.0"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:492) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:527) ~[?:1.7.0_79]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:46) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+02 Oct 2015 03:17:10,184  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
+02 Oct 2015 03:17:10,277 ERROR  [main] Admin:31 - For input string: "1=100.0"
+java.lang.NumberFormatException: For input string: "1=100.0"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:492) ~[?:1.7.0_79]
+	at java.lang.Integer.parseInt(Integer.java:527) ~[?:1.7.0_79]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:47) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:25) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+02 Oct 2015 03:18:39,884  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
+05 Oct 2015 18:03:49,959 ERROR  [main] Admin:31 - Connection not activated...
+java.lang.Exception: Connection not activated...
+	at factorySQL.DAO_Factory.getStudentDAO(DAO_Factory.java:50) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:24) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+05 Oct 2015 18:04:27,440 ERROR  [main] Admin:31 - Connection not activated...
+java.lang.Exception: Connection not activated...
+	at factorySQL.DAO_Factory.getStudentDAO(DAO_Factory.java:50) ~[classes/:?]
+	at factorySQL.Admin.addStudent(Admin.java:24) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+05 Oct 2015 18:08:00,507  INFO  [main] StudentDAO_JDBC:41 - Student Successfully added
+05 Oct 2015 18:08:00,545 ERROR  [main] StudentDAO_JDBC:66 - Cannot add or update a child row: a foreign key constraint fails (`dpAssign`.`Student_Course`, CONSTRAINT `fk_course_id` FOREIGN KEY (`course_id`) REFERENCES `Course` (`course_id`))
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`dpAssign`.`Student_Course`, CONSTRAINT `fk_course_id` FOREIGN KEY (`course_id`) REFERENCES `Course` (`course_id`))
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:973) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:62) ~[classes/:?]
+	at factorySQL.AdminUser.addStudent(AdminUser.java:22) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:56) ~[classes/:?]
+05 Oct 2015 18:52:30,868  INFO  [main] ProfessorDAO_JDBC:36 - ProfessorDinesha has been added successfully!
+05 Oct 2015 18:53:44,326  INFO  [main] ProfessorDAO_JDBC:36 - ProfessorRC has been added successfully!
+05 Oct 2015 18:54:29,219  INFO  [main] CourseDAO_JDBC:36 - Course DP has been added
+05 Oct 2015 18:55:39,057 ERROR  [main] StudentDAO_JDBC:45 - Duplicate entry '1' for key 'PRIMARY'
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:973) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3847) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3783) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2447) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2594) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1901) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2113) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2049) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2034) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:40) ~[classes/:?]
+	at factorySQL.AdminUser.addStudent(AdminUser.java:22) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:86) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 18:59:48,155 ERROR  [main] CourseDAO_JDBC:93 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:82) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.StudentUser(Main.java:128) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:39) ~[classes/:?]
+05 Oct 2015 19:01:24,437 ERROR  [main] CourseDAO_JDBC:93 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:82) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:58) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:03:21,190 ERROR  [main] CourseDAO_JDBC:93 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:82) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.StudentUser(Main.java:128) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:39) ~[classes/:?]
+05 Oct 2015 19:06:07,195 ERROR  [main] CourseDAO_JDBC:93 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:82) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.StudentUser(Main.java:128) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:39) ~[classes/:?]
+05 Oct 2015 19:08:19,824 ERROR  [main] CourseDAO_JDBC:93 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:82) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.StudentUser(Main.java:128) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:39) ~[classes/:?]
+05 Oct 2015 19:14:30,369 ERROR  [main] CourseDAO_JDBC:65 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourseById(CourseDAO_JDBC.java:56) ~[classes/:?]
+	at factorySQL.StudentUser.getEnrolledCourses(StudentUser.java:29) ~[classes/:?]
+	at factorySQL.Main.StudentUser(Main.java:139) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:39) ~[classes/:?]
+05 Oct 2015 19:14:30,370 ERROR  [main] AdminUser:39 - null
+java.lang.NullPointerException
+	at factorySQL.StudentUser.getEnrolledCourses(StudentUser.java:30) ~[classes/:?]
+	at factorySQL.Main.StudentUser(Main.java:139) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:39) ~[classes/:?]
+05 Oct 2015 19:16:06,351 ERROR  [main] CourseDAO_JDBC:93 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:82) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:58) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:19:20,384 ERROR  [main] CourseDAO_JDBC:93 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:82) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:61) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:22:59,456 ERROR  [main] CourseDAO_JDBC:95 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:84) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:22) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:61) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:25:43,544 ERROR  [main] AdminUser:38 - null
+java.lang.NullPointerException
+	at factorySQL.User.getCourses(User.java:33) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:61) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:26:24,986 ERROR  [main] AdminUser:38 - null
+java.lang.NullPointerException
+	at factorySQL.User.getCourses(User.java:33) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:61) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:28:29,081 ERROR  [main] CourseDAO_JDBC:95 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:84) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:24) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:61) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:30:10,721 ERROR  [main] CourseDAO_JDBC:95 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2432) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.createStatement(ConnectionImpl.java:2416) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.CourseDAO_JDBC.getCourses(CourseDAO_JDBC.java:84) ~[classes/:?]
+	at factorySQL.User.getCourses(User.java:24) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:61) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:33:46,506  INFO  [main] StudentDAO_JDBC:41 - Student Successfully added
+05 Oct 2015 19:34:00,915 ERROR  [main] StudentDAO_JDBC:45 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4140) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4109) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:37) ~[classes/:?]
+	at factorySQL.AdminUser.addStudent(AdminUser.java:22) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:92) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+05 Oct 2015 19:34:00,915 ERROR  [main] StudentDAO_JDBC:66 - No operations allowed after connection closed.
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.7.0_79]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57) ~[?:1.7.0_79]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.7.0_79]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_79]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:400) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.Util.getInstance(Util.java:383) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:958) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:937) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:926) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:872) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.throwConnectionClosedException(ConnectionImpl.java:1236) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:1231) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4140) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at com.mysql.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:4109) ~[mysql-connector-java-5.1.36.jar:5.1.36]
+	at factorySQL.StudentDAO_JDBC.addStudent(StudentDAO_JDBC.java:58) ~[classes/:?]
+	at factorySQL.AdminUser.addStudent(AdminUser.java:22) ~[classes/:?]
+	at factorySQL.Main.AdminUser(Main.java:92) ~[classes/:?]
+	at factorySQL.Main.main(Main.java:36) ~[classes/:?]
+=======
 05 Oct 2015 16:53:05,760  INFO  [main] ProfessorDAO_JDBC:45 - Professormama has been added successfully!
 05 Oct 2015 16:54:07,017  INFO  [main] CourseDAO_JDBC:45 - Course dp has been added
 05 Oct 2015 16:54:31,481  INFO  [main] StudentDAO_JDBC:50 - Student Successfully added
+<<<<<<< HEAD
 05 Oct 2015 19:35:03,423  INFO  [main] ProfessorDAO_JDBC:33 - Professormamashri has been added successfully!
 05 Oct 2015 19:35:27,823  INFO  [main] CourseDAO_JDBC:31 - Course dbj has been added
 05 Oct 2015 19:35:49,084  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
@@ -84,3 +476,6 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operati
 05 Oct 2015 19:50:27,933  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
 05 Oct 2015 19:50:42,994  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
 05 Oct 2015 19:51:30,995  INFO  [main] StudentDAO_JDBC:36 - Student Successfully added
+=======
+>>>>>>> 1a24087d3cef890b63254ac8e7c98053367a08de
+>>>>>>> e21f87ec7124933c407d7c93d66b3ebe020f5e7b
